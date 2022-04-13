@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KODECAMP-REGISTRATION</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <header class="header">
+            <h1 id="title class=" text-center ">KODECAMP REGISTRATION</h1>
+        <p id="description " class="description text-center ">Please fill the form below to get on the KodeCamp train</p>
+        </header>
+                      <!-- REGISTRATION FORM SECTION -->
+                      <form id="registration-form ">
+                                                  
+                     <div class="form-group>
+                <label for="first-name" id="name">First Name</label>
+                <input type="text" placeholder="Enter your first Name" name="first-name" id="first-name" class="label-control" autofocus required>
+    </div>
+
+    <div class="form-group" <label for="last-name" id="name">Last Name</label>
+        <input type="text" placeholder="Enter your last Name" class="label-control" name="last-name" required>
+    </div>
+
+    <div class="form-group">
+        <label for="email-address" id="email">Email Address</label>
+        <input type="email" placeholder="Enter your email address" class="label-control" name="email-address" id="email-address" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$ " required>
+    </div>
+
+    <div class="form-group">
+        <p>Gender</p>
+        <label><input type="radio" id="gender" name="gender" value="Male" class="input-radio" unchecked/>Male</label><br>
+        <label><input type="radio" id="gender" name="gender" value="Male" class="input-radio" unchecked/>Female</label>
+    </div>
+
+    <div class="form-group">
+        <p>Education Level ?</p>
+        <select id="drop-down" name="edu-level" class="label-control" required>
+                       <option disable selected value>Select education level</option>
+                       <option value="PHD">PHD</option>
+                       <option value="Masters">Masters</option>
+                       <option value="Bachelors Degree">Bachelors Degree</option>
+                       <option value="HND">HND</option>
+                       <option value="OND">OND</option>
+                       <option value="NCE">NCE</option>
+                       <option value="Undergraduate">Undergraduate</option>
+                       <option value="SSCE">SSCE</option>
+                       </select>
+    </div>
+
+    <div class="form-group">
+        <p>Do You have a Laptop?</p>
+        <label><input type="radio" name="select" id="laptop" class="input-radio" unchecked/>Yes</label> <br>
+        <label><input type="radio" name="select" id="laptop" class="input-radio" unchecked>No</label>
+    </div>
+
+    <div class="form-group">
+        <p>How did you hear about Kodecamp ?</p>
+        <select id="drop-down" name="about-us" class="label-control" required>
+                    <option disabled selected value>Choose here</option>
+                    <option value="Friends">Friends</option>
+                    <option value="Social Media">Social Media</option>
+                    <option value="School">School</option>
+                    <option value="Tech Community">Tech Community</option>
+                  </select>
+    </div>
+
+    <div class="form-group">
+        <p>What track are you registering for ?</p>
+        <select id="drop-down" name="reg-track" class="label-control" required>
+                    <option disable selected value>Choose here</option>
+                    <option value="Product Design">Product Design</option>
+                    <option value="Frontend Development">Frontend Development</option>
+                    <option value="Backend Development">Backend Development</option>
+                    <option value="Product Management">Product Management</option>
+                    <option value="Digital Marketing">Digital Marketing</option>
+                  </select>
+    </div>
+
+    <div class="form-group">
+        <p>What level are you on ?</p>
+        <label><input type="radio" id="level" name="select-level" class="input-radio" unchecked/>Beginner</label><br>
+        <label><input type="radio" id="level" name="select-level" class="input-radio" unchecked/>Intermediate </label>
+    </div>
+
+    <div class="form-group">
+        <p>Tell us about yourself</p>
+        <textarea name="about-yourself" id="comments" class="input-textarea form-group label-control" placeholder="Enter details here.."></textarea>
+    </div>
+
+    <div class="form-group">
+        <p>Country</p>
+        <select id="drop-down" name="your-country" class="label-control" required/>
+        <option disable selected value>Select your country</option>
+        <option value="Ghana">Ghana</option>
+        <option value="Nigeria">Nigeria</option>
+        <option value="Kenya">Kenya</option>
+        <option value="South Africa">South Africa</option>
+        <option value="Benin Republic">Benin Republic</option>
+        <option value="Togo">Togo</option>
+        <option value="Eygpt">Eygpt</option>
+        <option value="Algeria">Algeria</option>
+        <option value="Tunisia">Tunisia</option>
+        <option value="Senegal">Senegal</option>
+        </select>
+        <button type="submit" id="submit" class="submit-btn">
+          Submit
+        </button>
+        </form>
+    </div>
+</body>
+
+</html>
